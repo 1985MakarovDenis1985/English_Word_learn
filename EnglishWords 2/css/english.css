@@ -1,0 +1,351 @@
+@font-face {
+  font-family:'Gaegu-Regular';
+  src: url("../fonts/Gaegu-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family:'Comfortaa-Regular';
+  src: url("../fonts/Comfortaa-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family:'Gugi-Regular';
+  src: url("../fonts/Gugi-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+
+div.background{
+	display: block;
+	position: fixed;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/Eng.jpg);
+	background-size: cover;
+	opacity: 0.5;
+	z-index: 1;
+}
+
+.menu{
+	width: 100%;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 100;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.menu_item{
+	width: 200px;
+	height: 50px;
+	background: rgba(241, 191, 105, 0.3);
+	border-radius: 10px;
+	position: relative;
+	z-index: 100;
+}
+
+	.menu_item:hover{
+		background: rgba(241, 191, 105, 0.9);
+	}
+
+.menu_item>a{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	line-height: 50px;
+  	font-family:'Gugi-Regular';
+  	color: #4b1a0b;
+
+}
+
+
+div.main_box{
+/*	border: 1px solid black;*/
+	margin-top: 50px;
+	width: 100%;
+	height: 100%;
+/*	display: flex;
+	justify-content: center;
+	position: absolute;*/
+	position: relative;
+	float: left;
+	z-index: 100;
+	margin-top: auto;
+	margin-left: auto;
+	align-items: center;
+}
+
+
+.table_one{
+	width: 545px;
+	height: 900px;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px;
+	background: rgba(241, 191, 105, 0.5);
+	float: left;
+	margin:50px;
+	padding-top: 50px;
+	padding-bottom: 0px;
+}
+
+				@media screen and (max-width: 1440px){
+					.table_one{
+						width: 530px;
+						margin:15px;
+						margin-left: 130px;
+					}
+				}
+
+				@media screen and (max-width: 1400px){
+					.table_one{
+						width: 530px;
+						margin-left: 55px;
+						margin-right: auto;
+					}
+				}
+
+				@media screen and (max-width: 1210px){
+					.table_one{
+						width: 550px;
+						margin-left:auto;
+						margin-right: auto;
+					}
+				}
+
+				@media screen and (max-width: 1145px){
+					.table_one{
+						width: 550px;
+						margin-left:auto;
+						margin-right: auto;
+						float: none;
+					}
+				}
+.sign{
+	width: 130px;
+	margin-top: -25px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family:'Gugi-Regular';
+	color: #4b1a0b;
+}
+
+
+
+
+
+
+
+span.one{
+	position: relative;
+	display: inline-block;
+	width: 270px;
+	height: 35px;
+	text-align: center;
+	line-height: 39px;
+	font-family:'Comfortaa-Regular';
+}
+
+
+span.one:before{
+	content:"";
+	position: absolute;
+	display: block;
+	width: 270px;
+	height: 35px;
+	margin-left: 0px;
+	margin-top: 0px;
+	transition: width 0.5s;
+}
+
+div.hide{
+	height: 50px;
+	width: 50px;
+	background: red;
+	position: absolute;
+}
+
+
+span.two{
+	font-family:'Comfortaa-Regular';
+	margin-left: 40px;
+	position: absolute;
+	display: inline-block;
+	width: 240px;
+	height: 33px;
+	text-align: center;
+	line-height: 35px;
+	border-bottom: 1px solid #af761b;
+	color: #4b1a0b;
+}
+
+			@media screen and (max-width: 1440px){
+				span.two{
+					margin-left: 5px;
+				}
+			}
+
+			@media screen and (max-width: 1315px){
+				span.two{
+					margin-left: 15px;
+				}
+			}
+
+/*FIRST FLAG*/
+
+span.--first:before{
+	background-image: url(../img/canada.png);
+	background-size: cover;
+}
+span.--second:before{
+	background-image: url(../img/canada.png);
+	background-size: cover;
+	background-position: 0 -35px;
+}
+span.--third:before{
+	background-image: url(../img/canada.png);
+	background-size: cover;
+	background-position: 0 -70px;
+}
+span.--fourt:before{
+	background-image: url(../img/canada.png);
+	background-size: cover;
+	background-position: 0 -105px;
+}
+
+/*SECOND FLAG*/
+
+span.--first_2:before{
+	background-image: url(../img/usa_2.png);
+	background-size: cover;
+}
+span.--second_2:before{
+	background-image: url(../img/usa_2.png);
+	background-size: cover;
+	background-position: 0 -35px;
+}
+span.--third_2:before{
+	background-image: url(../img/usa_2.png);
+	background-size: cover;
+	background-position: 0 -70px;
+}
+span.--fourt_2:before{
+	background-image: url(../img/usa_2.png);
+	background-size: cover;
+	background-position: 0 -105px;
+}
+
+/*THIRD FLAG*/
+
+span.--first_3:before{
+	background-image: url(../img/england_1.png);
+	background-size: cover;
+}
+span.--second_3:before{
+	background-image: url(../img/england_1.png);
+	background-size: cover;
+	background-position: 0 -35px;
+}
+span.--third_3:before{
+	background-image: url(../img/england_1.png);
+	background-size: cover;
+	background-position: 0 -70px;
+}
+span.--fourt_3:before{
+	background-image: url(../img/england_1.png);
+	background-size: cover;
+	background-position: 0 -105px;
+}
+
+
+/*FOURT FLAG*/
+
+span.--first_4:before{
+	background-image: url(../img/NZ.png);
+	background-size: cover;
+}
+span.--second_4:before{
+	background-image: url(../img/NZ.png);
+	background-size: cover;
+	background-position: 0 -35px;
+}
+span.--third_4:before{
+	background-image: url(../img/NZ.png);
+	background-size: cover;
+	background-position: 0 -70px;
+}
+span.--fourt_4:before{
+	background-image: url(../img/NZ.png);
+	background-size: cover;
+	background-position: 0 -105px;
+}
+
+
+/*FIFTH FLAG*/
+
+span.--first_5:before{
+	background-image: url(../img/BC.png);
+	background-size: cover;
+}
+span.--second_5:before{
+	background-image: url(../img/BC.png);
+	background-size: cover;
+	background-position: 0 -35px;
+}
+span.--third_5:before{
+	background-image: url(../img/BC.png);
+	background-size: cover;
+	background-position: 0 -70px;
+}
+span.--fourt_5:before{
+	background-image: url(../img/BC.png);
+	background-size: cover;
+	background-position: 0 -105px;
+}
+
+
+
+
+	@media screen and (max-width: 600px){
+		span.one:before{
+			width: 270px;
+		}
+
+	}
+
+span.one:hover:before{
+	width: 1px;
+}
+
+.line{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background: red;
+	opacity: 0.3;
+	height: 5px;
+	width: 100%;
+}
+
+.article{
+	display: block;
+	width: 100%;
+	font-family:'Gugi-Regular';
+	color: #76571b;
+	font-size: 8pt;
+	text-align: center;
+}
+
+
+
+
+
+
+
